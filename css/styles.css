@@ -44,7 +44,7 @@ section {
 }
 
 ul {
-    list-style-type: none;
+    /* Removed the line that hid bullet points */
     padding: 0;
     margin: 0; 
 }
