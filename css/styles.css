@@ -4,11 +4,11 @@ body {
     padding: 0;
     background-color: #F2F2F2;
     color: #252625;
-    line-height: 1.5; /* Adjusted line height */
+    line-height: 1.5;
 }
 
 header {
-    padding: 10px 20px; /* Reduced padding */
+    padding: 10px 20px;
     text-align: center;
 }
 
@@ -17,7 +17,7 @@ header h1 {
 }
 
 header p {
-    margin: 3px 0 0 0; /* Reduced margin */
+    margin: 3px 0 0 0;
 }
 
 a {
@@ -27,32 +27,31 @@ a {
 
 h2, h3 {
     border-bottom: 2px solid #252625;
-    padding-bottom: 8px; /* Reduced padding */
-    margin-top: 20px;   /* Reduced margin */
+    padding-bottom: 8px;
+    margin-top: 20px;
 }
 
 section {
-    padding: 15px 30px; /* Reduced padding */
+    padding: 15px 30px;
 }
 
 ul {
-    list-style-type: none;
     padding: 0;
-    margin: 0; /* Removed margin */
+    margin: 0;
 }
 
 li {
-    margin-bottom: 10px; /* Added margin to list items for better spacing */
+    margin-bottom: 10px;
 }
 
 footer {
     text-align: center;
-    margin-top: 20px;  /* Reduced margin */
-    padding: 10px 0;   /* Reduced padding */
+    margin-top: 20px;
+    padding: 10px 0;
 }
 
 @media screen and (max-width: 600px) {
     section {
-        padding: 10px 5px; /* Reduced padding for smaller screens */
+        padding: 10px 5px;
     }
 }
