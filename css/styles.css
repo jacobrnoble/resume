@@ -4,10 +4,11 @@ body {
     padding: 0;
     background-color: #F2F2F2;
     color: #252625;
+    line-height: 1.5; /* Adjusted line height */
 }
 
 header {
-    padding: 20px;
+    padding: 10px 20px; /* Reduced padding */
     text-align: center;
 }
 
@@ -16,7 +17,7 @@ header h1 {
 }
 
 header p {
-    margin: 5px 0 0 0;
+    margin: 3px 0 0 0; /* Reduced margin */
 }
 
 a {
@@ -26,27 +27,32 @@ a {
 
 h2, h3 {
     border-bottom: 2px solid #252625;
-    padding-bottom: 10px;
-    margin-top: 30px;
+    padding-bottom: 8px; /* Reduced padding */
+    margin-top: 20px;   /* Reduced margin */
 }
 
 section {
-    padding: 20px 40px;
+    padding: 15px 30px; /* Reduced padding */
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0; /* Removed margin */
+}
+
+li {
+    margin-bottom: 10px; /* Added margin to list items for better spacing */
 }
 
 footer {
     text-align: center;
-    margin-top: 40px;
-    padding: 20px 0;
+    margin-top: 20px;  /* Reduced margin */
+    padding: 10px 0;   /* Reduced padding */
 }
 
 @media screen and (max-width: 600px) {
     section {
-        padding: 20px 10px;
+        padding: 10px 5px; /* Reduced padding for smaller screens */
     }
 }
