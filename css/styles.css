@@ -4,39 +4,28 @@ body {
     padding: 0;
     background-color: #F2F2F2;
     color: #252625;
-    line-height: 1.6;
+    line-height: 1.5; 
 }
 
 header {
     background-color: #252625;
-    color: #F2F2F2;
-    padding: 15px 20px;
+    padding: 10px 20px; 
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    color: #F2F2F2;
 }
 
 header p {
-    margin: 5px 0;
+    margin: 3px 0 0 0; 
+    color: #F2F2F2;
 }
 
-.download-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 16px;
-    border: none;
-    background-color: #F2F2F2;
-    color: #252625;
+header a {
+    color: #F2F2F2; /* Set color to white for links within the header */
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.download-btn:hover {
-    background-color: #ddd;
 }
 
 a {
@@ -46,8 +35,8 @@ a {
 
 h2, h3 {
     border-bottom: 2px solid #252625;
-    padding-bottom: 5px;
-    margin-top: 20px;
+    padding-bottom: 8px;
+    margin-top: 20px;   
 }
 
 section {
@@ -57,20 +46,39 @@ section {
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0; 
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
 
 footer {
     text-align: center;
-    margin-top: 20px;
-    padding: 10px 0;
+    margin-top: 20px;  
+    padding: 10px 0;   
+}
+
+.download-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #252625;
+    color: #F2F2F2;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #404040;
 }
 
 @media screen and (max-width: 600px) {
     section {
-        padding: 10px 5px;
+        padding: 10px 5px; 
     }
 }
