@@ -4,7 +4,8 @@ body {
     padding: 0;
     background-color: #F2F2F2;
     color: #252625;
-    line-height: 1.5; 
+    line-height: 1.5;
+    font-size: 0.9em; /* Reduced font size */
 }
 
 header {
@@ -24,7 +25,7 @@ header p {
 }
 
 header a {
-    color: #F2F2F2; /* Set color to white for links within the header */
+    color: #F2F2F2;
     text-decoration: none;
 }
 
@@ -44,9 +45,8 @@ section {
 }
 
 ul {
-    /* Removed the line that hid bullet points */
-    padding: 0;
-    margin: 0; 
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 li {
@@ -95,6 +95,16 @@ footer {
 .project-detail-button:hover {
     background-color: #252625;
     color: #F2F2F2;
+}
+
+/* A wrapper around the content */
+.content-wrapper {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 600px) {
