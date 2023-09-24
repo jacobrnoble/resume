@@ -4,20 +4,39 @@ body {
     padding: 0;
     background-color: #F2F2F2;
     color: #252625;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 header {
-    padding: 10px 20px;
+    background-color: #252625;
+    color: #F2F2F2;
+    padding: 15px 20px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2em;
 }
 
 header p {
-    margin: 3px 0 0 0;
+    margin: 5px 0;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #F2F2F2;
+    color: #252625;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #ddd;
 }
 
 a {
@@ -27,7 +46,7 @@ a {
 
 h2, h3 {
     border-bottom: 2px solid #252625;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
     margin-top: 20px;
 }
 
@@ -36,8 +55,8 @@ section {
 }
 
 ul {
+    list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
 li {
