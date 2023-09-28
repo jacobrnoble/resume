@@ -5,13 +5,16 @@ body {
     background-color: #F2F2F2;
     color: #252625;
     line-height: 1.5;
-    font-size: 0.9em; /* Reduced font size */
+    font-size: 0.9em;
+    min-width: 730px; /* 650px (content max-width) + 80px (sidebar-nav width) */
 }
 
 header {
     background-color: #252625;
     padding: 10px 20px; 
     text-align: center;
+    z-index: 2; /* Higher z-index to ensure header is always on top */
+    position: relative; /* Required for z-index to work */
 }
 
 header h1 {
@@ -89,7 +92,7 @@ footer {
     cursor: pointer;
     text-decoration: none;
     transition: all 0.3s;
-    font-size: 0.9em;  
+    font-size: 0.9em;
 }
 
 .project-detail-button:hover {
@@ -97,18 +100,65 @@ footer {
     color: #F2F2F2;
 }
 
-/* A wrapper around the content */
 .content-wrapper {
-    margin: 20px auto;
+    margin: 20px auto;  /* Center the content horizontally */
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #fff;
-    max-width: 800px;
+    max-width: 750px; 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 100px); /* Adjusted width */
 }
 
-@media screen and (max-width: 600px) {
-    section {
-        padding: 10px 5px; 
+@media screen and (max-width: 730px) { /* Adjusted breakpoint */
+    .sidebar-nav {
+        display: none;
     }
+
+    .content-wrapper {
+        margin-left: 10px; /* Minimal margin for smaller screens */
+        width: calc(100% - 20px); /* Adjust width accordingly */
+    }
+}
+
+.sidebar-nav {
+    position: fixed;
+    left: 0;
+    top: 0; /* Starts from the top */
+    height: 100%; /* Full height of the viewport */
+    width: 80px;
+    background-color: #F2F2F2;
+    border-right: 1px solid #ccc;
+    padding-top: 140px; /* Adjusted to push the content down below the header */
+    overflow-y: auto;
+    z-index: 1; /* Lower z-index to ensure sidebar is below the header */
+}
+
+
+.sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sidebar-nav a {
+    text-decoration: none;
+    color: #252625;
+    padding: 5px 10px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.sidebar-nav a:hover {
+    background-color: #ddd;
+}
+
+#mda-content {
+    display: none;
 }
